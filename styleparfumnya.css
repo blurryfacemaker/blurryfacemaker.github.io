@@ -1,0 +1,151 @@
+<style>
+.flxrowbtnaroma {
+	display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.btnaromafamily {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btnsubromafamily {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Green */
+.successbtn {
+  border-color: #04AA6D;
+  color: green;
+}
+
+.successbtn:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Blue */
+.infobtn {
+  border-color: #2196F3;
+  color: dodgerblue
+}
+
+.infobtn:hover {
+  background: #2196F3;
+  color: white;
+}
+
+/* Orange */
+.warningbtn {
+  border-color: #ff9800;
+  color: orange;
+}
+
+.warningbtn:hover {
+  background: #ff9800;
+  color: white;
+}
+
+/* Red */
+.freshfam {
+  border-color: #f44336;
+  color: red
+}
+
+.freshfam:hover {
+  background: #f44336;
+  color: white;
+}
+
+.btnaromafamily:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.subaroma {
+  display: flex;
+  gap: 5px;
+  padding: 0px 0px 5px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.activebtn:after {
+  content: "\2212";
+}
+
+@media screen and (max-width: 600px) {
+.subaroma {
+  display: flex;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  flex-direction: column;
+}
+.subaroma > p {
+  margin: 5px;
+}
+.btnsubromafamily {
+  width: 100%;
+}
+
+/* Green */
+.successbtn {
+  background-color: #04AA6D;
+  color: #fff;
+}
+
+.successbtn:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Blue */
+.infobtn {
+  background-color: #2196F3;
+  color: #fff
+}
+
+.infobtn:hover {
+  background: #2196F3;
+  color: white;
+}
+
+/* Orange */
+.warningbtn {
+  background-color: #ff9800;
+  color: #000;
+}
+
+.warningbtn:hover {
+  background: #ff9800;
+  color: white;
+}
+
+/* Red */
+.freshfam {
+  background-color: #f44336;
+  color: #fff
+}
+
+.freshfam:hover {
+  background: #f44336;
+  color: white;
+}
+}
+</style>
